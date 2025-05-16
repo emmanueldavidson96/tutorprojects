@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project One</title>
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Section One(Story) -->
+    <div class="section_one">
+        
+        <!-- Text Area -->
+        <div class="section_one_text_area">
+            <h2 >Story</h2>
+            <p class="text_top">
+                A (modular, highly tweakable) responsive one-page template designed by <span class="text_decorate">HTML5 UP</span> and released for free under the <span class="text_decorate">Creative Commons</span>.
+            </p>
+            <p class="text_bottom">
+                This is a Banner element, and it's generally used as an introduction or opening statement. You can customize its <span class="text_decorate">style</span>, scheme, color, size, orientation, 
+                content alignment, and image position, as well as assign it an optional onload or onscroll transition modifier (details).
+            </p>
+            <button id="get_started" 
+                onclick="document.getElementById('get_started').style.backgroundColor = 'black';
+                document.getElementById('get_started').style.color = 'white'
+                "
+            >
+            Straw
+        </button>
+            <button  id="get_juice" 
+                onclick="document.getElementById('get_juice').style.backgroundColor = 'black';
+                document.getElementById('get_juice').style.color = 'white'
+                "
+            >Orange Juice</button>
+            <button id="get_umbrella" 
+                onclick="document.getElementById('get_umbrella').style.backgroundColor = 'black';
+                document.getElementById('get_umbrella').style.color = 'white'
+                "
+            >Umbrella</button>
+            <button id="get_sugar" 
+                onclick="document.getElementById('get_sugar').style.backgroundColor = 'black';
+                document.getElementById('get_sugar').style.color = 'white'
+                "
+                onmouseenter="document.getElementById('get_sugar').style.visibility = 'hidden'"
+                onmouseleave="document.getElementById('get_sugar').style.visibility = 'visible'"
+            >Sugar Cubes</button>
+        </div>
+
+        <!-- Full Image Area -->
+        <div class="full_image_area_container">
+            <img 
+                src="https://html5up.net/uploads/demos/story/images/banner.jpg"
+                class="full_image"
+            />
+        </div>
+    </div>
+
+
+    <!-- Section Two  -->
+    <div class="section_two">
+        <!-- Image Area -->
+        <div class="section_two_image_area">
+            <img 
+                src="https://html5up.net/uploads/demos/story/images/spotlight01.jpg"
+                class="section_two_image"
+            />
+        </div>
+
+        <!-- Text Area -->
+        <div class="section_two_text_area">
+            <h2>Spotlight</h2>
+            <p>
+                This is a Spotlight element, and it's generally used – as its name implies – to spotlight a 
+                particular feature, subject, or pretty much whatever. You can customize its style, scheme, color, 
+                orientation, content alignment, and image position, 
+                as well as assign it an optional onload or onscroll transition modifier (details).
+            </p>
+            <a href="" class="spotlight_btn">learn more</a>
+        </div>
+
+
+        
+
+    </div>
+    <!-- Section Three -->
+    <div class="section_three">
+        <h1>Your Total Salary</h1>
+        <input type="text" placeholder="Input your name..." id="employeeName">
+        <input type="number" placeholder="Total Salary" id="salary">
+        <h1>Input your bill amounts</h1>
+        <input type="number" placeholder="bill one amount" id="billOne">
+        <input type="number" placeholder="bill two amount" id="billTwo">
+        <input type="number" placeholder="bill three amount" id="billThree">
+        <p id="total_salary_after_calculation"></p>
+        <button id="calculateBtn" >
+            Calculate Employee Salary</button>
+    </div>
+    <!-- Section Four -->
+    <!-- Section Five -->
+    <!-- Section Six -->
+    <!-- Section Seven -->
+    <script src="./js/projectOne.js">
+    </script>
+</body>
+</html>
