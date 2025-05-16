@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+  
+}
+.section_one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.section_one_text_area{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 5%;
+    
+}
+.section_one_text_area h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3.5em;
+}
+.text_top{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5em;
+}
+.text_bottom{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+}
+.text_decorate{
+    text-decoration: underline;
+}
+.section_one_text_area button{
+    width: fit-content;
+    padding: 1.5rem 4rem;
+    border: 1px solid gray;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.section_one_text_area button:hover{
+    border: 1px solid rgb(16, 185, 185);
+    color: rgb(16, 185, 185);
+}
+.full_image_area_container{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.full_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.section_two{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+}
+.section_two_image_area{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+.section_two_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section_two_text_area{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10rem;
+    gap: 1.6rem;
+}
+.section_two_text_area h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3rem;    
+}
+.section_two_text_area p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.spotlight_btn{
+    width: fit-content;
+    padding: 1rem 3rem;
+    border: 1px solid gray;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+.spotlight_btn:hover{
+    border:1px solid aqua;
+    color: aqua;
+    cursor: pointer;
+}
+.section_three{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section_three input{
+    padding:15px;
+    width: 60%;
+    height: 100px;
+
+}
+.section_three button{
+    width: 60%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#total_salary_after_calculation{
+    font-size: 3rem;
+    color: rgb(8, 207, 8);
+    font-weight: 700;
+}
+
+@media screen and (max-width:640px){
+    .section_one{
+        flex-direction: column;
+        height: fit-content;
+        padding: 50px 0px;
+    }
+    .section_one_text_area{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .full_image_area_container{
+        width: 100%;
+    }
+}
